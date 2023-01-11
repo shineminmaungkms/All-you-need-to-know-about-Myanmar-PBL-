@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Myanmar</title>
+<style type="text/css">
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .toplogo{
+            max-width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            float: left;
+        }
+        ul{
+            margin: 0;
+            background-color: ;
+            padding: 70px;
+            height: 150px;
+            list-style-type: none;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        li a{
+            display: block;
+            float: left;
+            padding: 12px 16px;
+            color: green;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        li a:hover{
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        li a.active{
+            color:red;
+            border-bottom: 3px solid yellow;
+        }
+        li a:hover:not(.active){
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        .img{
+           height: px;
+           width: 100%;
+           margin-left: auto;
+           margin-right: auto;
+           display: block;
+           justify-content: center;
+           opacity: 1;
+           box-shadow: 10px 10px 8px 5px gray;
+        }
+        h2{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .center_text{
+            margin-left: 5px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.4;
+            font-family: Oswald;
+        } 
+        .p{
+            position: absolute;
+            top: 55%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+        }
+        .title{
+            width: 90%;
+            color: white;
+            height: 37px;
+            text-align: center;
+            padding-top: 13px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Oswald;
+           font-size: 74px;
+        }
+        .SMM{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .intro{
+            background-image: url("Bagan Darker.png");
+            height: 700px;
+            width: 90%;
+            margin: auto;
+            color: white;
+            font-size: 25px;
+            background-repeat: no-repeat;
+            background-size: 100% 900px;
+            padding-top: 0px;
+             display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .table{
+            width: 90%;
+            height: 200px;
+            margin: auto;
+        }
+        .w{
+            width: 20%;
+        }
+        .w1{
+            width: 80%;
+            padding-bottom: 50px;
+        }
+        .wclone{
+            font-size: 50px;
+            font-family: sans-serif;
+            padding-right: 30px;
+            padding-bottom: 90px;
+        }
+        .width{
+            width: 100%;
+            height: 430px;
+        }
+        .big{
+            font-size: 50px;
+            font-family: sans-serif;
+            padding-top: 30px;
+        }
+        .img_but_no{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .lm{
+            border: 1px solid orange;
+            background-color: #FF4500;
+            color: white;
+            width: 10%;
+            height: 50px;
+            margin: auto;
+            transition: 0.8s;
+        }
+        .ft{
+            text-align: center;
+            padding-top: 15px;
+            box-sizing: border-box;
+        }
+        .bu{
+            list-style-type: none;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        .lm:hover{
+            background-color: black;
+            cursor: pointer;
+            box-shadow: 0 0 15px 2px gray;
+            border: 1px solid black;
+        }
+        .Fh2{
+            font-size: 50px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .pq{
+            text-align: center;
+        }
+        .ie{
+            display: block;
+            width: 400px;
+            height: 300px;
+            float: left;
+            border-radius: 6px;
+        }
+        .box{
+            width: 400px;
+            margin: 0 10px;
+            box-shadow: 0 0 15px 2px gray;
+            transition: 0.5s;
+        }
+        .container{
+            width: 100%;
+            height: 300px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .box:hover{
+            transform: translateY(-5px);
+        }
+        .overle{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: gray;
+            opacity: 0.8;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 1s ease;
+        }
+        .box:hover .overle{
+            height: 18%;
+        }
+        .only_for_p{
+            text-align: center;
+        }
+        .pls{
+            width: 50%;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .iewq{
+            width: 60%;
+            height: 220px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #20A9A4;
+            box-sizing: border-box;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact .content h1{
+            font-size: 36px;
+            font-weight: 500px;
+            color: black;
+        }
+        .contact .content p{
+            font-weight: 300px;
+            color: #fff;
+        }
+        .lqoq{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .lqoq .lqoq1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .lqoq .lqoq1 .lqoq2{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq h3{
+            font-weight: 500;
+            color: #fff;
+        }
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inbox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inbox input, .contactForm .inbox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.8s;
+            color: #666;
+        }
+        .contactForm .inbox input:focus ~ span, .contactForm .inbox input:valid ~ span,.contactForm .inbox textarea:focus ~ span, .contactForm .inbox textarea:valid ~ span{
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inbox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+</style>
+</head>
+<body>
+<div class="toplogo">
+<img src="istockphoto-1317008042-612x612.jpg" width="200px" height="150px">
+</div>
+<ul>
+<li><a class="active" href=""><b>Home</b></a></li>       
+<li><a href="History.html"><b>History</b></a></li>
+<li><a href="Holidays.html"><b>Holidays</b></a></li>
+<li><a href="PD.html"><b>Popular Destinations</b></a></li>
+<li><a href="About us.html"><b>About us</b></a></li>
+</ul>
+<hr>
+<br>
+<div class="intro">
+<h2 class="title SMM" align="center"><b>Introduction to <b> Myanmar (Burma)</b></b></h2>
+<p class="center_text p"><b>From history to geography, from cultures to traditions, this website is packed with all the information you need to know about, before coming to Myanmar.</b></p>
+</div>
+<table class="table">
+    <tr class="w">
+        <td class="wclone"><b>Location</b></td>
+        <td><img src="Om.png" class="width"></td>
+    </tr>
+</table>
+<table class="table">
+    <tr>
+        <td class="wclone w">
+           <p class="big"><b>History</b></p>
+        </td>
+        <td class="w1"><img src="darker.png" class="img_but_no"></td>
+    </tr>
+</table>
+    <div class="lm ft"><a href="History.html" class="bu">
+            Learn More
+        </a>
+        </div>
+<div>
+    <h2 class="Fh2"><b> Cultures and Traditions, and Popular Destinations</b></h2>
+    <p class="pq">Myanmar is full of many ethnics and religions and has many different cuisines different from each other. And the cultures and Traditions are also a must see!</p>
+</div>
+<div class="container">
+<div class="box">
+    <a href="Culture.html"><img src="temp-5.jpg" class="ie"></a>
+    <div class="overle">
+        <p style="text-align: center;">Click the image to read more about <b>Culutres and Traditions</b></p>
+    </div>
+</div>
+<div class="box">
+    <a href="PD.html"><img src="u_bein_bridge.jpg" class="ie"></a>
+    <div class="overle">
+        <p style="text-align: center; padding-bottom: auto;">Click the image to read more about <b>Popular Destinations</b></p>
+    </div>
+</div>
+</div>
+<div class="pls">
+    <h1>Holidays</h1>
+    <p class="only_for_p">Myanmar has lots of National holidays and Public holidays. Some are full of historys and some are not.</p>
+    <img src="myanmar-public-holidays.jpg" class="iewq">
+    <p class="only_for_p">Click <i><b>Learn More</b></i> to learn more about National holidays and Public holidays in Myanmar.</p>
+</div>
+    <div class="lm ft"><a href="Holidays.html" class="bu">
+            Learn More
+        </a>
+    </div>
+    <br>
+    <br/>
+    <hr>
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="lqoq">
+            <div class="lqoq1">
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Address</b></h3>
+                        <p>5726 Thiri Mingalar Ave, Bet. 78th & 35th Str. Mandalay 05031</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Phone</b></h3>
+                        <p>Tel: 09 794 910 763</p>
+                    </div>
+                </div>
+
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Email</b></h3>
+                        <p>shineminmaung@edusnschool.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Popular Destinations in Myanmar</title>
+	<style type="text/css">
+		*{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .toplogo{
+            max-width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            float: left;
+        }
+        ul{
+            margin: 0;
+            background-color: ;
+            padding: 70px;
+            height: 150px;
+            list-style-type: none;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        li a{
+            display: block;
+            float: left;
+            padding: 12px 16px;
+            color: green;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        li a:hover{
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        li a.active{
+            color:red;
+            border-bottom: 3px solid yellow;
+        }
+        li a:hover:not(.active){
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        .intro{
+            background-image: url("Better_be_holiday.jpg");
+            height: 700px;
+            width: 90%;
+            margin: auto;
+            color: white;
+            font-size: 25px;
+            background-repeat: no-repeat;
+            background-size: 100% 900px;
+            padding-top: 0px;
+             display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .title{
+            width: 100%;
+            color: white;
+            height: 37px;
+            text-align: center;
+            padding-top: 13px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Oswald;
+           font-size: 74px;
+        }
+        .SMM{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .div{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .center_text{
+            margin-left: 5px;
+            width: 50%;
+            margin-left: auto;
+           margin-right: auto;
+           text-align: justify;
+           text-indent: 30px;
+           line-height: 1.2;
+           font-family: Oswald;
+        }
+        .p{
+            position: absolute;
+            top: 70%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+        }
+        .center_text_copy{
+            margin-left: 5px;
+            width: 50%;
+            margin-left: auto;
+           margin-right: auto;
+           text-align: justify;
+           font-family: Oswald;
+        }
+        .p1{
+            position: absolute;
+            top: 95%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+        }
+        .img{
+            width: 70%;
+            height: 550px;
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transition: 0.8s;
+        }
+        .we{
+            width: 85%;
+            text-align: justify;
+            text-indent: 25px;
+            line-height: 1.5;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .img:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px 2px gray;
+        }
+        .yesyesyes{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: justify;
+            text-align: center;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #20A9A4;
+            box-sizing: border-box;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact .content h1{
+            font-size: 36px;
+            font-weight: 500px;
+            color: black;
+        }
+        .contact .content p{
+            font-weight: 300px;
+            color: #fff;
+        }
+        .lqoq{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .lqoq .lqoq1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .lqoq .lqoq1 .lqoq2{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq h3{
+            font-weight: 500;
+            color: #fff;
+        }
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inbox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inbox input, .contactForm .inbox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.8s;
+            color: #666;
+        }
+        .contactForm .inbox input:focus ~ span, .contactForm .inbox input:valid ~ span,.contactForm .inbox textarea:focus ~ span, .contactForm .inbox textarea:valid ~ span{
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inbox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+	</style>
+</head>
+<body>
+<div class="toplogo">
+<img src="istockphoto-1317008042-612x612.jpg" width="200px" height="150px">
+</div>
+<ul>
+<li><a href="ICT PBL Website.html"><b>Home</b></a></li>       
+<li><a href="History.html"><b>History</b></a></li>
+<li><a href="Holidays.html"><b>Holidays</b></a></li>
+<li><a class="active" href="PD.html"><b>Popular Destinations</b></a></li>
+<li><a href="About us.html"><b>About us</b></a></li>
+</ul>
+<hr>
+<div class="intro">
+<h2 class="title SMM" align="center"><b>10 most Popular Places to visit in Myanmar</b></h2>
+<p class="center_text p"><b>Here it'll tell you the 10 best and picturesque places to visit in Myanmar! Now Myanmar – has slowly but surely been coming into the tourist fold in the last couple of decades. As the iron-fist of its military junta slackens and fair elections sweep across the nation, there’s a newfound love for the backpacker and adventure traveler. The country -sandwiched between India and the mainstays of Southeast Asia – certainly has its fair share of awesome things to see though.</b></p>
+<p class="center_text_copy p1"><b>Lets explore the best places to visit in Myanmar!</b></p>
+</div>
+<div class="div">
+    <h1>1. Bagan</h1>
+    <img src="Bagan.jpg" class="img">
+    <p class="we">Breathtaking Bagan bags a well-deserved top spot on this list of the best places to visit in Myanmar. Most all travelers who head this way leave with a distinct sense of awe and amazement. And it’s easy to see why! A sea of countless temple tops pierce the clouds and the forests; plumes of dust coalesce at the spires of ancient stupas; the faded outlines of forgotten Hindu demigods beckon from the great platforms, and all the while the serrated tips of the Arakan Mountains loom in the background.</p>
+    <p class="we">Seeing Bagan by balloon is becoming increasingly popular, and offers a truly unique view over this 26-square-mile land of temples. Located on the eastern banks of the Irrawaddy (officially Ayeyarwady) River, roughly 180km downstream (or south-west) of Mandalay, in the midst of the central plains of Myanmar.</p>
+    <h1>2. Kalaw</h1>
+    <img src="Kalaw.jpg" class="img">
+    <p class="we">Kalaw has risen and risen on the Myanmar tourist scene to become one of the favored destinations for trekkers and adventurers hitting the country’s eastern mountains. Perched high up on the ridges of the Shan hills, the spot began life as a mountain town under British rule, intended to offer a respite from the Asian heat of the plains below. Today, visitors can still enjoy the cooling breezes of the highlands, along with a clutch of laid-back guesthouses, excellent food markets, and – most importantly – hiking without the need for a permit!</p>
+    <p class="we">Kalaw is a peaceful hill town in Taunggyi District, Shan State of Myanmar. Surrounded by stunning green hills on all sides which presents a spectacular view. The town itself is pretty small with a bustling city centre and market with the best food joints in the town. Ethnic groups from the surrounding hills participate in this market once every five days.</p>
+    <h1>3. Yangon</h1>
+    <img src="shwedagon-pagoda-yangon-l.jpg" class="img">
+    <p class="we">Yangon found glory in the days of British rule, rising with the rise of the Raj and becoming a patchwork of elegant Victorian townhouses and Georgian builds. Much of that side of the city remains intact too, and today you can navigate the tuk-tuk-packed roadways to see the likes of St Mary’s Cathedral and its Anglo spires. However, the real piece de resistance (and what typically magnetizes travelers to this erstwhile Burmese capital) has to be the Shwedagon Pagoda. This marks the sacred spot where the holy lotus buds once appeared to signal the coming of Gautama Buddha and guide the learned to Nirvana. Be sure to visit the site and wonder and the glimmering gold construction, the prayer rooms, and the exquisitely carved pavilions for pilgrims.</p>
+    <p class="we">Yangon is located in the southern part of the country on the east bank of the Yangon, or Hlaing, River (eastern mouth of the Irrawaddy River), 25 miles (40 km) north of the Gulf of Martaban of the Andaman Sea. Yangon is the largest city in Myanmar and the industrial and commercial centre of the country.</p>
+    <h1>4. Mandalay</h1>
+    <img src="Mandalay-Palace3.jpg" class="img">
+    <p class="we">You can only imagine just how resplendent the city of Mandalay would have looked when that mighty Shwenandaw Monastery glimmered with its coverings of gold leaf, and it’s easy to see why even the very name of this mysterious temple-topped town in the depths of central Myanmar has inspired poems and lines by perhaps Asia’s most prolific English eulogizer: Kipling. However, modern Mandalay does well to balance all those elegant Bamar pagodas and carved stupas with a real bout of Burmese pandemonium.</p>
+    <p class="we">This is, after all, the second-largest town in Myanmar, a pilgrimage site (thanks to the Maha Myat Muni Paya), and a famous tourist destination (known for its walled Royal Palace) all rolled into one! Mandalay, city is located on north-central Myanmar (Burma), the second largest in the country (after Yangon [Rangoon]). Located on the Irrawaddy River, it lies at the centre of mainland Myanmar and is the focus of regional communications and trade and transportation routes.</p>
+    <h1>5. Kyaiktiyo</h1>
+    <img src="Golden-Rock.jpg" class="img">
+    <p class="we">It’s just a short jaunt east from Yangon to the soaring heights of Mount Kyaiktiyo, which are famed as the home of one of the most revered Buddhist relics in the nation: the precariously-placed Golden Rock. This awesome, gravity-defying mass of granite can be found perched on its own ledge atop the rolling forests and green hills of south-central Burma. Legend has it that it’s suspended by a single thread of Buddha’s own hair, and (male) pilgrims come to scale the winding steps to the wonder to leave gold leaf and gain inspiration.</p>
+    <p class="we"> The site is surrounded by its own temple and pagoda, complete with immersive little shrines to lesser-known Buddhist spirits. The pagoda is located near Kyaikto in Mon State in the northern part of the Tenasserim coast.</p>
+    <h1>6. Inle Lake</h1>
+    <img src="Inle-Lake.jpg" class="img">
+    <p class="we">The moment you spot the curious leg rowers of Inle Lake, and hear the creaking splash of those carved canoes drifting across the water, you’ll know you’re in the heartlands of rustic Myanmar. A place where time has stood still, this huge body of water is peppered with stilted villages made of wood. The locals are known for their on-surface agricultural methods, and you’ll be able to see dashes of green gardens growing straight from the lake. Major religious sites like the Hpaung Daw U Pagoda (which has an amazing festival in late-summer) also dot the banks, but the real draw has to be the food, which oozes fresh herbs, Chinese spices and lake-caught fish. Inle Lake, a freshwater lake located in the Nyaungshwe Township of Shan State, part of Shan Hills in Myanmar (Burma).</p>
+    <h1>7. Ngapali Beach</h1>
+    <img src="Ngapali-Beach-1.jpg" class="img">
+    <p class="we">There’s no sand stretch in all of Myanmar as popular as Ngapali. A large curve of yellow-white that arches its way around the Bay of Bengal, it’s got a lapping ocean of turquoise waves and a fringing of huge palm trees. The occasional clutch of salt-washed fishing boats drift in and out of the bay during the day, feeding the kitchens with an endless supply of fresh seafood. There are oodles of loungers dotting the sands too, and plenty of tour organizers offering SCUBA expeditions, water skiing, jet skiing, sea kayaking and more.</p>
+    <p class="we">Ngapali Beach is in Rakhine State, Western Myanmar. Ngapali also has its very own airport, making it one of the easier coastal spots to reach from the capital.</p>
+    <h1>8. Ngwe Saung Beach</h1>
+    <img src="please.jpg" class="img">
+    <p class="we">Ngwe Saung might not have the tropical perfection of Ngapali, but thanks to a prime location on the edge of the Bay of Bengal, along with a clutch of pretty coconut groves and five-star resort hotels (check out how those sparkling infinity pools merge with the blues of the Indian Ocean!), it’s slowly rising to become another of Myanmar’s top beach destinations. Made for relaxation and rest, the long golden sands here are the prime attraction, of course. However, it’s also possible to sample fantastic Southeast Asian seafood – just look to the folksy restaurants that line up along the shore. Ngwesaung is a beach resort located 48 km west of Pathein, Ayeyarwady Region, Myanmar.</p>
+    <h1>9. Hpa-an</h1>
+    <img src="Mount-Zwegabin.jpg" class="img">
+    <p class="we">Nestled between craggy, jungle-topped peaks and ringed by the reflective waters of the Thanlwin River, little Hpa-an is a rustic, rough-around-the-edges traveler town with some great hostels, guesthouses, and beer bars. Head down the bustling strip of Zaydan Road to flit between the coffee joints and spice-scented roadside kitchens, or make a beeline for the pretty lakeside of Kan Thar Yar, which shimmers like a mirror within walking distance of the center. And when it’s time to explore the karst peaks on the horizon, mysterious Mount Zwegabin and its hilltop monastery beckon.</p>
+    <p class="we">The capital of Karen (Kayin) State, Hpa An is a picturesque town with a backpacker feel that sits on the eastern bank of the Thanlwin (Salween) river, about 270 kilometres east of Yangon. The setting itself, the surrounding caves and mountains to explore, and the laid back atmosphere are the highlights of the area.</p>
+    <h1>10. Hsipaw/Thibaw</h1>
+    <img src="pan-kam-village-hsipaw.jpg" class="img">
+    <p>Prep the walking boots and thigh muscles for that trip to highland Hsipaw, because this onetime royal capital of the Shan peoples is slowly rising to compete with even aforementioned Kalaw on the trekking front. Don’t be surprised if you get caught up in these deep northern mountains longer than you thought – not only are the sweeping views of sun-scorched forests to die for, but there’s a rich cultural tradition to uncover too. You can experience this between the craft stalls of the town’s Central Market, or seek it out at the Shan Palace that still stands nostalgically atop the streets here.</p>
+    <p>Hsipaw, also known as Thibaw, is the principal town of Hsipaw Township <b>in Shan State, Myanmar</b> on the banks of the Duthawadi River. It is 200 kilometres (120 mi) north-east of Mandalay.</p>
+</div>
+<hr>
+<div class="yesyesyes">
+    <h3>These are the most popular and beautiful places that you should visit when you come to Myanmar! Hope these are helpful for you.</h3>
+</div>
+<hr>
+<section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="lqoq">
+            <div class="lqoq1">
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Address</b></h3>
+                        <p>5726 Thiri Mingalar Ave, Bet. 78th & 35th Str. Mandalay 05031</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Phone</b></h3>
+                        <p>Tel: 09 794 910 763</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Email</b></h3>
+                        <p>shineminmaung@edusnschool.co.uk</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <h3><b>Reference from: https://www.thecrazytourist.com/</b></h3>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+</body>
+</html>

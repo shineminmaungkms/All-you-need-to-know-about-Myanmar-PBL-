@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>History about Myanmar</title>
+	<style type="text/css">
+		*{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .toplogo{
+            max-width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            float: left;
+        }
+        ul{
+            margin: 0;
+            background-color: ;
+            padding: 70px;
+            height: 150px;
+            list-style-type: none;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        li a{
+            display: block;
+            float: left;
+            padding: 12px 16px;
+            color: green;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        li a:hover{
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        li a.active{
+            color:red;
+            border-bottom: 3px solid yellow;
+        }
+        li a:hover:not(.active){
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        h1{
+            font-size: 35px;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        .p{
+            text-align: center;
+        }
+        .qw{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+        .qw1{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .p1{
+            text-align: justify;
+            text-indent: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 1.6;
+        }
+        table{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .e1{
+            width: 80%;
+        }
+        .e2{
+            width: 20%;
+        }
+        .emg{
+            width: 100%;
+            height: 100%;
+        }
+        .emg1{
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 400px;
+            box-shadow: 0 0 15px 2px gray;
+        }
+        .qpqpq{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .emg3{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #20A9A4;
+            box-sizing: border-box;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact .content h1{
+            font-size: 36px;
+            font-weight: 500px;
+            color: black;
+        }
+        .contact .content p{
+            font-weight: 300px;
+            color: #fff;
+        }
+        .lqoq{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .lqoq .lqoq1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .lqoq .lqoq1 .lqoq2{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq h3{
+            font-weight: 500;
+            color: #fff;
+        }
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inbox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inbox input, .contactForm .inbox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.8s;
+            color: #666;
+        }
+        .contactForm .inbox input:focus ~ span, .contactForm .inbox input:valid ~ span,.contactForm .inbox textarea:focus ~ span, .contactForm .inbox textarea:valid ~ span{
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inbox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+	</style>
+</head>
+<body>
+<div class="toplogo">
+<img src="istockphoto-1317008042-612x612.jpg" width="200px" height="150px">
+</div>
+<ul>
+<li><a href="ICT PBL Website.html"><b>Home</b></a></li>       
+<li><a class="active" href="History.html"><b>History</b></a></li>
+<li><a href="Holidays.html"><b>Holidays</b></a></li>
+<li><a href="PD.html"><b>Popular Destinations</b></a></li>
+<li><a href="About us.html"><b>About us</b></a></li>
+</ul>
+<hr>
+<div>
+    <h1>History</h1>
+    <p class="p">About Myanmar</p>
+</div>
+<br>
+<div class="qw">
+    <p class="p1"><b>Historically known as Burma, the origins of the people of Myanmar can be traced to the Indo-Aryans who first settled the area in the 7th century BC and Mongolians who invaded the region under Khan in the 13th century AD, which some English influence added in during the British Empire era. The Kingdom of Pagan was the first unified version of Burma to be created by King Anawratha. The kingdom reached its height of power in the 11th-13th centuries AD and is attributed for volume of religious structures in Bagan. This empire is then conquered by the Mongolians, who control the region until the mid-16th century. In the early 17th century, the British East India Company sent representatives into Burma attempting to establish trading posts along the Bay of Bengal, and met with firm opposition by the Burmese people. Not easily defeated, the British continued their efforts which led to the Anglo-Burmese War in 1824-1826.  Eventually Burma would be annexed into British India and become a separate colony by 1937.</b></p>
+</div>
+<table>
+    <tr>
+        <td class="e1">
+            <h1><b>British rule in Myanmar(Burma)</b></h1>
+            <p class="p1"><b>British rule in Burma lasted from 1824 to 1948</b>, from the successive three Anglo-Burmese wars through the creation of Burma as a province of British India to the establishment of an independently administered colony, and finally independence. <b>The region under British control was known as British Burma</b>. After <b>the independence from British colony the Japenese occupied Burma for a time</b> , but were later thrust from <b>power with the help of British forces through the help of Aung San in exchange for the country’s independence.</b> In 1948, Burma officially became its own sovereign nation. <b>Members of Aung San’s political party are assassinated and an affiliated leader,</b> U Nu, is appointed to lead the country. Various factions continue to vie for control of the country. The following is a brief timeline of key events since Myanmar’s independence. Those on a Myanmar tour may hear common reference to some of these figures, particularly to Aung San Suu Kyi, daughter of Aung San and current leader of the NLD, the party holding the vast majority of seats in parliament.</p>
+        </td>
+        <td class="e2">
+            <img src="historical_events_of_myanmar.jpg" class="emg">
+        </td>
+    </tr>
+</table>
+<div class="qpqpq">
+    <img src="Yesbutno.jpg" class="emg3">
+</div>
+<table>
+    <tr>
+        <td>
+            <h1>Post-independence Burma (1948–1962)</h1>
+            <p class="p1">The first fourteen years of post-independence Burma were marred by several communist and ethnic insurgencies. Prominent insurgent groups during this period include the Communist Party of Burma (CPB, "white flags") led by Thakin Than Tun, the Communist Party (Burma) ("red flags") led by Thakin Soe, the People's Volunteer Organisation (Yèbaw Hpyu) led by Bo La Yaung (a member of the Thirty Comrades), the Revolutionary Burma Army (RBA) led by communist officers Bo Zeya, Bo Yan Aung and Bo Yè Htut (all three of them members of the Thirty Comrades), and the Karen National Union (KNU). </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <h2>History of Post-independence(Burma)</h2>
+        <p class="p1">Remote areas of northern Burma were for many years <b>controlled by an army of Kuomintang (KMT)</b> forces after the Communist victory in China <b>in 1949</b>. Burma accepted foreign assistance in rebuilding the country in these early years, but continued <b>American support for the Chinese Nationalist military</b> presence in Burma finally resulted in the country rejecting most foreign aid, refusing to join the Southeast Asia Treaty Organisation (SEATO) and supporting the Bandung Conference of 1955. Burma <b>generally strove to be impartial in world affairs and was one of the first countries in the world to recognise Israel and China.</b></p>
+
+        <p class="p1">By 1958, the country was largely beginning to recover economically, but was beginning to fall apart politically due to a split in the Anti-Fascist People's Freedom League (AFPFL) into two factions, one led by Thakins Nu and Tin, the other by Ba Swe and Kyaw Nyein. This was despite the unexpected success of U Nu's "Arms for Democracy" offer taken up by U Seinda in Arakan, the Pa'O, some Mon and Shan groups, but more significantly by the PVO surrendering their arms. The situation became very unstable in parliament, with U Nu surviving a no-confidence vote only with the support of the opposition National United Front (NUF), believed to have "crypto-communists" amongst them.</p>
+
+        <p class="p1">Army hardliners now saw the 'threat' of the CPB coming to an agreement with U Nu through the NUF, and in the end <b>U Nu "invited" Army Chief of Staff General Ne Win to take over the country.</b> Over 400 "communist sympathisers" were arrested, of which 153 were deported to the Coco Islands in the Andaman Sea. <b>Among them was the NUF leader Aung Than, older brother of Aung San. The Botataung, Kyemon and Rangoon Daily were also closed down.</b></p>
+
+        <p class="p1">Ne Win's caretaker government successfully stabilised the situation and paved the way for new general elections in 1960 that returned U Nu's Union Party with a large majority. The situation did not remain stable for long, when the Shan Federal Movement, started by Nyaung Shwe Sawbwa Sao Shwe Thaik (the first President of independent Burma 1948–1952) and aspiring to a "loose" federation, was seen as a separatist movement insisting on the government honouring the right to secession in ten years provided for by the 1947 Constitution.</p>
+
+        <p class="p1">N<b>e Win had already succeeded in stripping the Shan Sawbwas of their feudal powers in exchange for comfortable pensions for life</b> in 1959. He staged a coup d'état on 2 March 1962, arrested U Nu, Sao Shwe Thaik and several others, and declared a socialist state run by the Union Revolutionary Council (URC), which consisted of senior military officers. <b>Sao Shwe Thaik's son, Sao Mye Thaik, was shot dead in what was generally described as a "bloodless" coup.</b> Thibaw Sawbwa Sao Kya Seng also disappeared mysteriously after being stopped at a checkpoint near Taunggyi. The URC later founded the Burma Socialist <b>Programme Party (BSPP) on 4 July 1962 to nominally separate the powers of the military from the government and to lead a one-party state.</b></p>
+    </td>
+    </tr>
+</table>
+<div>
+    <img src="Bla.jpg" class="emg1">
+</div>
+<div class="qw1">
+    <h1>Military rule in Myanmar</h1>
+    <p class="p1">Military rule in Myanmar (also known as Burma) <b>lasted from 1962 to 2011</b> and <b>resumed in 2021.</b> Myanmar gained its <b>independence from the British Empire in 1948</b> under the Burmese Independence Army, as a democratic nation. The <b>first military rule began in 1958 </b>and direct military rule started when Ne Win captured power through a coup d'état in 1962. Burma became <b>a military dictatorship under the Burma Socialist Programme Party that lasted for 26 years</b>, under the claim to save the country from disintegration. During this period there was some democratic landscape in the form of giving rights to the citizen to elect and to stand for election.</p>
+    <h2>1962 to 2011</h2>
+    <p class="p1">The coup on 2 March 1962 led to the end of democratic form of government and the beginning of direct military rule in Myanmar up to 1974. During the period of military rule under General Ne Win, the country was shaped into one-party socialist state under the army led party called as Burma Socialist Programme Party (BSPP) till 1988. And the year from 1962 to 1988, can be marked as the era of Ne Win. The period from 1962-1988 can be divided into two phases. The first phase is the period of direct military rule from 1962-1974 and Constitutional Dictatorship phase from 1974 to 1988. In 2011, the military junta was officially dissolved, following a 2010 general election, and a nominally civilian government was installed.</p>
+    <h2>Since 2021</h2>
+    <p class="p1">In February 2021, the Tatmadaw detained State Counsellor Aung San Suu Kyi, President Win Myint, and other government leaders. They then proceeded to take control of the government, and instituted a one-year state of emergency, with Burma’s Commander-in-chief of the armed forces, Min Aung Hlaing, as the leader of the country, serving as the Chairman of the State Administrative Council, who has taken on a new title as prime minister of a newly formed caretaker government.</p>
+</div>
+<br>
+<hr>
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="lqoq">
+            <div class="lqoq1">
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Address</b></h3>
+                        <p>5726 Thiri Mingalar Ave, Bet. 78th & 35th Str. Mandalay 05031</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Phone</b></h3>
+                        <p>Tel: 09 794 910 763</p>
+                    </div>
+                </div>
+
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Email</b></h3>
+                        <p>shineminmaung@edusnschool.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

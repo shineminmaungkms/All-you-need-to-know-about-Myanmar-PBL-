@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gazetted Holidays in Myanmar</title>
+	<style type="text/css">
+		*{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .toplogo{
+            max-width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            float: left;
+        }
+        ul{
+            margin: 0;
+            background-color: ;
+            padding: 70px;
+            height: 150px;
+            list-style-type: none;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        li a{
+            display: block;
+            float: left;
+            padding: 12px 16px;
+            color: green;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        li a:hover{
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        li a.active{
+            color:red;
+            border-bottom: 3px solid yellow;
+        }
+        li a:hover:not(.active){
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        .div{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .p12{
+            width: 85%;
+            text-align: justify;
+            line-height: 1.5;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .p3{
+            text-align: center;
+            text-indent: 25px;
+            line-height: 1.5;
+        }
+        .img{
+            width: 70%;
+            height: 550px;
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transition: 0.8s;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #20A9A4;
+            box-sizing: border-box;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact .content h1{
+            font-size: 36px;
+            font-weight: 500px;
+            color: black;
+        }
+        .contact .content p{
+            font-weight: 300px;
+            color: #fff;
+        }
+        .lqoq{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .lqoq .lqoq1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .lqoq .lqoq1 .lqoq2{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq h3{
+            font-weight: 500;
+            color: #fff;
+        }
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inbox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inbox input, .contactForm .inbox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.8s;
+            color: #666;
+        }
+        .contactForm .inbox input:focus ~ span, .contactForm .inbox input:valid ~ span,.contactForm .inbox textarea:focus ~ span, .contactForm .inbox textarea:valid ~ span{
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inbox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+	</style>
+</head>
+<body>
+<div class="toplogo">
+<img src="istockphoto-1317008042-612x612.jpg" width="200px" height="150px">
+</div>
+<ul>
+<li><a href="ICT PBL Website.html"><b>Home</b></a></li>       
+<li><a href="History.html"><b>History</b></a></li>
+<li><a class="active" href="Holidays.html"><b>Holidays</b></a></li>
+<li><a href="PD.html"><b>Popular Destinations</b></a></li>
+<li><a href="About us.html"><b>About us</b></a></li>
+</ul>
+<hr>
+<br>
+<div class="div">
+    <h1 class="p3">Gazetted Holidays in Myanmar</h1>
+    <p class="p3">In this page it'll be telling you about 17 Holidays in Myanmar.</p>
+</div>
+<div class="div">
+    <h1 class="p3">Independence Day</h1>
+    <img src="Yesbutno.jpg" class="img">
+    <p class="p12">Independence Day is an annual public holiday in Myanmar on January 4th. The holidays marks the date in 1948 when Myanmar proclaimed its independence from Britain.</p>
+    <p class="p12">Unlike many independence days, this is not Myanmar's National Day. That is celebrated on 10th day following the full moon of the month of Tazaungmone (late November to early December) when student riots in 1920 against British Rule are remembered.</p>
+    <h3 class="p3">How is Myanmar Independence Day celebrated?</h3>
+    <p class="p12">Festivals and traditional activities are held across the country to celebrate the date. The capital, Yangon is festooned in patriotic colours to mark the festivities. Men and women may wear the nation dress of Burma, which consists of a collarless shirt and skirt.</p>
+    <h1 class="p3">Union Day</h1>
+    <img src="myanmar_fishermen_01.jpg" class="img">
+    <p class="p12">Union Day is an annual public holiday in Myanmar on 12th February. The holiday marks the date in 1947 when the Panglong Agreement was signed and passed and Burma became a unified country.</p>
+    <h1 class="p3">Peasants' Day</h1>
+    <img src="myanmar_peasants.jpg" class="img">
+    <p class="p12">Also known as Farmers' Day, Peasants' Day is an annual public holiday in Myanmar on March 2nd. The holiday is a day to mark and honour the contribution of agriculture and farming to Myanmar.</p>
+    <h3 class="p3">History of Peasants' Day</h3>
+    <p class="p12">In Myanmar, around 70% of the country's population are involved in farming and agriculture. The prosperity and success of the nation depends on the contribution of those working on the land, with over 60% of Myanmar's Gross Domestic Product being generated from agriculture. Myanmar's main agricultural product is rice and it is one of the biggest exporters of rice in Asia. In recent years, the crops and products grown in Myanmar have been diversified to ensure that the country is not too dependent on one particular crop.</p>
+    <p class="p12">Peasants' Day also marks the military coup of 1962, when General Ne Win came to power. The military-led government instigated a series of socialist reforms and remained in power until 2011.</p>
+    <h1 class="p3">Full Moon Day of Tabaung</h1>
+    <img src="myanmar-shwedagon-temple-01.jpg" class="img">
+    <p class="p12">In Myanmar, Maka Bucha is known as the Full Moon Day of Tabaung. Tabaung is the last month of the year in the Burmese calendar. In the morning many Thai people wake up early to give alms to monks. In the evening, temples are full of people listening to sermons. They often perform a ritual known as the candle ceremony where they walk clockwise three times around the temple. Holding flowers, incense, and a lighted candle. Each of the three circuits represents one of the three jewels (ideas at the heart of Buddhism) - Buddha, Dharma, and Sangha.</p>
+    <h1 class="p3">Thingyan</h1>
+    <img src="myanmar_traditional_thingyan.jpg" class="img">
+    <p class="p12">Thingyan is a public holiday in Myanmar usually celebrated over three days beginning on April 13th. The public holidays given for each year will depend on which day of the week, April 13th falls on. Thingyan culminates in the Burmese New Year and the period of holidays are the most important and the biggest festival in Myanmar. Formerly the dates of Thingyan would have been based on the Burma lunisolar calendar, but the dates have now been fixed on April 13th.</p>
+    <h3 class="p3">How is Thingyan celebrated?</h3>
+    <p class="p12">Even though Thingyan has now been fixed in mid-April, its current date is a welcome position in the calendar as it occurs at the hottest time of the year in Myanmar and being a water festival, it is a great opportunity to cool down and get some relief from the sweltering heat. If you are in Myanmar during Thingyan, prepare to get wet! Everyone is likely to get soaking as people roam around with buckets of water or hose, spraying water on anyone they can. </p>
+    <p class="p12">This tradition originates from the custom of washing away the bad luck and misfortune of the previous year, entering the new year cleansed from the past. Water cleansing is a custom common in many New Year festivals around the world. In the 13th century, chronicles from the time that King Narathihapate, the last ruler of the Bagan Dynasty, built corridors that ran from his palace to the bank of the Ayeyarwaddy River and that during Thingyan they were used for water throwing.</p>
+    <h1 class="p3">Burmese New Year</h1>
+    <img src="IhateblackNigg.jpg" class="img">
+    <p class="p12">Burmese New Year takes place at the culmination of the Thingyan Water Festival. The New Year holidays are usually extended to the public sector and bolted on to the end of the Thingyan holidays.</p>
+    <h3 class="p3">Traditions of Burmese New Year</h3>
+    <p class="p12">After three days of partying and soaking everybody during Thingyan, the celebrations begin to recede and the traditional New Year's Day customs take centre stage. Like other New Years, this is a day to make fresh resolutions for the coming year, usually about changing bad behaviour and promising to do more good deeds for karma. An unusual custom is releasing fish. Before the day, The fish are rescued from lakes and rivers that are drying up.</p>
+    <p class="p12">They are kept in huge glazed earthen pots and jars before being released on New Year's Day into larger lakes and rivers with a prayer and a wish saying "I release you once, you release me ten times". On New Year's Day, people offer food called Satuditha to passers-by and those celebrating new year.  Satuditha is an act that shows the important charitable side of Burmese culture.</p>
+    <h1 class="p3">Labour Day</h1>
+    <img src="Biddy.jpg" class="img">
+    <p class="p12">This international holiday is observed on May 1st. It is most commonly associated as a commemoration of the achievements of the labour movement. The holiday may also be known as International Worker's Day or May Day and is marked with a public holiday in over 80 countries.</p>
+    <h3 class="p3">History of Labour Day</h3>
+    <p class="p12">The first May Day celebrations focused on workers took place on May 1st 1890 after its proclamation by the first international congress of socialist parties in Europe on July 14th 1889 in Paris, France, to dedicate May 1st every year as the "Workers Day of International Unity and Solidarity."</p>
+    <p class="p12">The date was chosen due to events on the other side of the Atlantic. In 1884 the American Federation of Organized Trades and Labor Unions demanded an eight-hour workday, to come in effect as of May 1st 1886. This resulted in the general strike and the Haymarket (in Chicago) Riot of 1886, but eventually also in the official sanction of the eight-hour workday.</p>
+    <h1 class="p3">Full Moon Day of Kasong</h1>
+    <img src="Kasone-scaled.jpg" class="img">
+    <p class="p12">Buddha Purnima is the most sacred day in the Buddhist calendar. It is the most important festival of the Buddhists and is celebrated with great enthusiasm. The exact date of Vesak is the first full moon in the fourth month in the Chinese lunar calendar. The date varies from year to year in the Gregorian calendar but is typically in May.</p>
+    <p class="p12">Followers of Buddhism have been celebrating Buddhist festivals for centuries, but the decision to celebrate this day formally was only taken at the first conference of the World Fellowship of Buddhists held in Sri Lanka in 1950. Although Buddhists regard every full moon as sacred, the moon of the month of Vaisakh has special significance because on this day the Buddha was born, attained enlightenment (nirvana), and attained parinirvana (nirvana-after-death of the body) when he died.</p>
+    <h3 class="p3">Traditions of Buddha Purnima</h3>
+    <p class="p12">Shakyamuni Buddha, the historical founder of Buddhism, was born in what is present-day Nepal over 3,000 years ago. There are various opinions concerning the exact dates of his birth and death, but according to Buddhist tradition, he is said to have been born April 8, 1029 BC and died on February 15, 949 BC, although other Buddhist scholars place his birth five hundred years later.</p>
+    <p class="p12">Shakyamuni Buddha was the son of the king of the Shakyas, a small clan whose kingdom was located at the foothills of the Himalayas, south of what is now central Nepal, fifteen miles from Kapilavastu. Shakya of Shakyamuni is taken from the name of this tribe and muni means sage or saint. His family name was Gautama (Best Cow) and his given name was Siddhartha (Goal Achieved) though some scholars say this is a title bestowed on him by later Buddhists in honour of the enlightenment he attained.</p>
+    <p class="p12">Even though many Buddhists observe Buddha's historical birth on 8th April, the exact date remains in question. Although modern archaeological and historical research confirms that Prince Siddartha Gotama lived around this time. On Buddha Purnima, people dress in white clothes and give out kheer (a rice pudding) as, according to legend, a woman named Sujata once offered Gautam Buddha kheer on his birthday and it has since become a tradition. The dharmacakra or dharma wheel is a symbol often seen during Vesak. It is a wooden wheel with eight spokes. The wheel represents Buddha's teaching on the path to enlightenment. The eight spokes symbolize the noble eightfold path of Buddhism.</p>
+    <h1 class="p3">Full Moon Day of Waso</h1>
+    <img src="buddha-myanmar-02.jpg" class="img">
+    <p class="p12">Also known as Dhammasetkya Day, this public holiday in Myanmar takes place on the full moon day of Waso, the fourth month in the Burmese calendar. It usually falls in July in the Western calendar. Depending on the day of the week that the full moon falls on, extra public holidays may be declared on the other days of the festival.</p>
+    <h3 class="p3">History of Full Moon Day of Waso</h3>
+    <p class="p12">This day, the first full moon of the fourth month in the Burmese calendar, commemorates the Buddha’s first sermon to five monks in the Deer Park in Benares, India and the founding of the Buddhist sangha (monkhood) about 2,500 years ago. In the sermon, which is known as 'Setting the Wheel of Dhamma in Motion', the Buddha first spelled out the Four Noble Truths and the Noble Eightfold Path.</p>
+    <p class="p12">Waso Full Moon Day marks the beginning of Buddhist lent (Wasso), which generally coincides with the height of Myanmar’s rainy season. Buddhist Lent last for three months from the full moon of Waso until the full moon of Thadingyut. It is normally a time of heightened religious activity around the country. Pilgrims throughout the country gather wild flowers to offer at pagodas, and offer new robes to monks. Almost all monks will not leave the grounds of their monastery during this time. During the period of Buddhist Lent, many Buddhists will abstain from eating meat, drinking alcohol or smoking. It is also traditionally a time when Myanmar people are not allowed to move house.</p>
+    <h1 class="p3">Martyr's Day/Arzarni Day</h1>
+    <img src="myanmar-aung-sun-01.jpg" class="img">
+    <p class="p12">Martyrs' Day, also known as Arzarni Day, is observed as a public holiday in Myanmar on July 19th. Martyrs' Day commemorates the assassination of General Aung San and several other cabinet members in 1947.</p>
+    <h3 class="p3">History of Martyrs' Day/Arzarni Day</h3>
+    <p class="p12">In 1886, Myanmar (then called Burma) came under British control. From the earliest days of colonisation, there was a strong feeling of resentment against the rule of the British. Just before the outbreak of World War II, there had been some moves towards autonomy in 1937, when Burma became a separately administered colony of Britain, with Ba Maw appointed as the first Prime Minister and Premier of Burma. Following the end of World War II, the Panglong Agreement was reached on February 12th 1947, which paved the way for the unification of Burma as an independent state. An interim government was formed with General Aung San (whose daughter is Aung San Suu Kyi) as Prime Minister.</p>
+    <p class="p12">On July 19th 1947, gunmen went into a cabinet meeting that was being held at The Secretariat in downtown Yangon and shot dead Aung San and seven other key leaders of the interim government. The assassinations were planned by a political rival, U Saw. Within a few months, U Saw was found guilty and executed. Burma gained its independence from British colonial rule on January 4th 1948. The Secretariat was used as the seat of the first independent Burmese government. Aung San who is affectionately known by the single reference, Bogyoke (meaning "Major General"), is remembered as the driving force behind the movement which saw the Union of Burma achieve independence. </p>
+    <h1 class="p3">Full Moon Day of Thadingyut</h1>
+    <img src="buddhist-lanterns-01.jpg" class="img">
+    <p class="p12">This public holiday in Myanmar takes place on the full moon day of Thadingyut, the seventh month in the Burmese calendar. The Thadingyut Festival lasts for three day from the day before the full moon through to the day after the full moon. Depending on the day of the week that the full moon falls on, extra public holidays may be declared on the other days of the festival. The festival marks Buddha's preaching of Abhidhamma to the gods in Trayastrimsa and the end of the Buddhist period of fasting</p>
+    <h3 class="p3">History of Full Moon Day of Thadingyut</h3>
+    <p class="p12">Known as the Festival of Lights, Thadingyut is the second most popular festival in Myanmar after Thingyan Festival. Maya, the mother of Buddha died a week after Buddha was born. She was reborn in the Trayastrimsa Heaven as a god named Santusita. To honour his mother, Buddha ascended to the Trayastrimsa Heaven and preached from the Abhidhamma texts to Santusita for three months.</p>
+    <p class="p12">The full moon of the month Waso (Dhammasetkya Day) marks the ascent by Buddha and the start of the three month period of Buddhist Lent, when the monks retreat to their monasteries. During this time, monks dedicate themselves to meditation and study. During Buddhist Lent, marriages are forbidden and many people give up meat and alcohol. Buddhist lent often coincides with the rainy season in Myanmar. The full moon in Thadingyut marks Buddha's return to earth and signifies the end of Buddhist Lent. Thadingyut is called the festival of lights as the followers of Buddha lit up their houses and temples to mark the return of Buddha. Towns and villages across Myanmar will be illuminated in honour of this auspicious event.</p>
+    <h1 class="p3">Full Moon Day of Tazaungmone</h1>
+    <img src="0f7463c2607f8266df46a8758842feaf.jpg" class="img">
+    <p class="p12">This public holiday in Myanmar takes place on the full moon day of Tazaungmone, the eighth month in the Burmese calendar. It usually falls in November in the Western calendar. Depending on the day of the week that the full moon falls on, extra public holidays may be declared on the other days of the festival.</p>
+    <h3 class="p3">History of Full Moon Day of Tazaungmone</h3>
+    <p class="p12">The full moon of Tazaungmone marks the end of the rainy season in Myanmar as well as the end of the Kathina festival during which monks are offered alms including new robes. The number nine is a lucky and auspicious number in Myanmar and 9,999 candles are lit up as offerings to Buddha in the Chaukhtatgyi Paya Pagoda on the night of the full moon day of Tazaungmone.</p>
+    <p class="p12">Following on from Thadingyut, celebrated on the previous full moon, Tazaungmone is another festival of lights as the festival of Tazaungdaing is also held at this time. Across Myanmar, hot-air balloons are lit with candles and released into the night sky. The balloons are released as an offering to the home of the devas in Buddhist cosmology and as a way to drive away evil spirits. The Tazaungdaing festival in Taunggyi is one of the most spectacular in Myanmar when giant paper balloons are lit and sent up into the sky.</p>
+    <h1 class="p3">National Day</h1>
+    <img src="myanmar-flag-01.jpg" class="img">
+    <p class="p12">National Day is an annual public holiday in Myanmar. It is celebrated on the tenth day following the full moon of the month of Tazaungmone. The holidays marks the beginning of student-led protests against the British in 1920. It is Myanmar's National Day and should not be confused with Myanmar's Independence Day, which takes places on 4 January.</p>
+    <h3 class="p3">History of Myanmar National Day</h3>
+    <p class="p12">In 1886, Myanmar (then called Burma) came under British control, with Rangoon (the capital. now called Yangon) being an important port situated between India and Singapore. From the earliest days of colonisation, there was a strong feeling of resentment against the rule of the British, with the student protests of 1920 seen as the start of the resistance movement that ultimately led to independence from Britain in 1948.</p>
+    <p class="p12">In 1920, on the tenth day following the full-moon day of Tazaungmone on the Burmese lunar calendar, students from the Rangoon and Judson Colleges began protests against the British administration’s Rangoon University Act of 1920. The Act raised the status of Rangoon College to that of a university, but the changes in the administration and curriculum were seen to exclude the local Burmese population. The protests ignited a call for nationalism in the students, the basis of which formed the key elements of the movement for independence. The national holiday is a day to remember not just the 1920 protests, but also the key role played by students in the creation of modern day Myanmar.</p>
+    <h1 class="p3">Kayin New Year Day</h1>
+    <img src="myanmar-kayin-01.jpg" class="img">
+    <p class="p12">Kayin New Year is a public holiday in Myanmar observed on the first day of Pyathoe, the tenth lunar month in the Myanmar calendar. This means it usually falls in December or January in the western calendar and can occur in both months in the same year or not at all in some years.</p>
+    <h3 class="p3">Traditions of Kayin New Year</h3>
+    <p class="p12">Kayin New Year is one of the major holidays celebrated by the Karen people. The Karen, also known as Kayin or Kariang, are the third-largest ethnic population in Myanmar accounting for about 7% of the population. Originally from central Asia, the Karen people arrived in what is now known as Myanmar (Burma) about 3,000 years ago. Over the years, many Karens have adopted other religions such as Buddhism and Christianity, though this new year is more agricultural than religious in nature. </p>
+    <p class="p12">The rice harvest is completed before Pyathoe, and according to Karen traditional religious practice, there must be a celebration for the consumption of the new crop. It is also the time to divine the date for commencement of the next crop. Typically, this time of year is also when new houses are built, and it is custom to celebrate the completion of a new dwelling. Kayin New Year has been a public holiday in Myanmar since 2009, though it was officially first celebrated in 1938. This was done by the British administration as a way of appeasing the Karen who had been pushing for a Karen National day. The Kayin New Year is an important time when the numerous Kayin communities can join and celebrate their unique cultural identity within Myanmar. Celebrations focus as much on the language, culture and literature of the Karens as much as it does in the arrival of the new year, though the traditional sounding of the Karen horn and drum will be heard across Kayin state to welcome the new year. Dance contests and kickboxing competitions are held every year in Hpa An, the capital of Kayin State. The New Year will also be celebrated around the world by the Karen diaspora.</p>
+    <h1 class="p3">Christmas Day in Myanmar</h1>
+    <img src="Better_be_working_right_neown.jpg" class="img">
+    <p class="p12">On this day, over two billion people (over a third of the world's population) will celebrate the birth of Christ. Christmas Day celebrates the Nativity of Jesus which according to tradition took place on December 25th 1 BC. Myanmar isn't the country that is not full of Christian and most people in Myanmar are Buddhist rather than Christian but it still has the Christmas day because there has been a Christian presence in Myanmar for centuries now, and Christmas Day is celebrated each year with a public holiday on 25 December.</p>
+    <h1 class="p3">New Year in Myanmar</h1>
+    <img src="new_years_eve_01.jpg" class="img">
+    <p class="p12">New Year's Eve is December 31st, the last day of the year, in the Gregorian calendar. Countries that still use the Julian Calendar observe New Year's Eve on January 13th. New Year's Eve is traditionally celebrated with firework displays across the globe at 00:00 in the local time zones.</p>
+    <h3 class="p3">History of New Year's Eve</h3>
+    <p class="p12">New Year's Day was fixed at January 1st in 153 BC, when the two Roman consuls, after whom - in the Roman calendar - years were named and numbered, chose that date, mainly for military reasons. During the Middle Ages, a number of different Christian feast dates were used to mark the New Year, though calendars often continued to display the months in columns running from January to December in the Roman fashion.</p>
+    <p class="p12">Most countries in Western Europe had officially adopted January 1st as New Year's Day even before they adopted the Gregorian calendar. This was called Circumcision Style, because it was the date of the 'Feast of the Circumcision', which occurred on the eighth day after Christmas Day, and is said to have been the day when Christ was circumcised. About 1 million people will gather in New York City’s Times Square to watch the ball drop at midnight on December 31st and mark the arrival of the new year. The Times Square New Year’s Eve ball drop tradition began in 1907 following a ban on the firework display that had taken place since 1904. The first ball weighed 700 pounds and was lit with 100 25-watt lights. The current ball is 12 feet in diameter, weighs 11,875 pounds and is covered 2,688 Waterford crystals, lit by 32,000 LED lights.</p>
+</div>
+<hr>
+<div>
+    <p class="p3"><b>These are all the popular holidays that are celebrated in Myanmar.</b></p>
+</div>
+<hr>
+<section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="lqoq">
+            <div class="lqoq1">
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Address</b></h3>
+                        <p>5726 Thiri Mingalar Ave, Bet. 78th & 35th Str. Mandalay 05031</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Phone</b></h3>
+                        <p>Tel: 09 794 910 763</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Email</b></h3>
+                        <p>shineminmaung@edusnschool.co.uk</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <h3><b>Reference from: https://www.officeholidays.com/</b></h3>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+</body>
+</html>

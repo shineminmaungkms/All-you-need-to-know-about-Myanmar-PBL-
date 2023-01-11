@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cluturs and Traditions</title>
+	<style type="text/css">
+		*{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+		.toplogo{
+            max-width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            float: left;
+        }
+        ul{
+            margin: 0;
+            background-color: ;
+            padding: 70px;
+            height: 150px;
+            list-style-type: none;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        li a{
+            display: block;
+            float: left;
+            padding: 12px 16px;
+            color: green;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        li a:hover{
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        li a.active{
+            color:red;
+            border-bottom: 3px solid yellow;
+        }
+        li a:hover:not(.active){
+            color: red;
+            border-bottom: 3px solid yellow;
+        }
+        .h1{
+        	font-size: 50px;
+        	text-align: center;
+        }
+        .pqRS{
+        	text-align: center;
+            line-height: 1.4;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .div{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .qwq{
+            width: 100%;
+            height: 700px;
+        }
+        .intro{
+            background-image: url("bigsussybaka.jpg");
+            height: 700px;
+            width: 90%;
+            margin: auto;
+            color: white;
+            font-size: 25px;
+            background-repeat: no-repeat;
+            background-size: 100% 900px;
+            padding-top: 0px;
+             display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .title{
+            width: 100%;
+            color: white;
+            height: 37px;
+            text-align: center;
+            padding-top: 13px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Oswald;
+           font-size: 74px;
+        }
+        .SMM{
+            position: absolute;
+            top: 60%;
+            left: 46%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .div{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .center_text{
+            margin-left: 5px;
+            width: 50%;
+            margin-left: auto;
+           margin-right: auto;
+           text-align: justify;
+           text-indent: 30px;
+           line-height: 1.5;
+           font-family: Oswald;
+        }
+        .p{
+            position: absolute;
+            top: 90%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+        }
+        .center_text_copy{
+            margin-left: 5px;
+            width: 50%;
+            margin-left: auto;
+           margin-right: auto;
+           text-align: justify;
+           font-family: Oswald;
+        }
+        .p1{
+            position: absolute;
+            top: 120%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+        }
+        .img{
+            width: 70%;
+            height: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transition: 0.8s;
+        }
+        .we{
+            width: 85%;
+            text-align: justify;
+            text-indent: 25px;
+            line-height: 1.5;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .img:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px 2px gray;
+        }
+        .Final{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: justify;
+            text-align: center;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #20A9A4;
+            box-sizing: border-box;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact .content h1{
+            font-size: 36px;
+            font-weight: 500px;
+            color: black;
+        }
+        .contact .content p{
+            font-weight: 300px;
+            color: #fff;
+        }
+        .lqoq{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .lqoq .lqoq1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .lqoq .lqoq1 .lqoq2{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .lqoq .lqoq1 .lqoq2 .tewq h3{
+            font-weight: 500;
+            color: #fff;
+        }
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inbox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inbox input, .contactForm .inbox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.8s;
+            color: #666;
+        }
+        .contactForm .inbox input:focus ~ span, .contactForm .inbox input:valid ~ span,.contactForm .inbox textarea:focus ~ span, .contactForm .inbox textarea:valid ~ span{
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inbox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+	</style>
+</head>
+<body>
+<div class="toplogo">
+<img src="istockphoto-1317008042-612x612.jpg" width="200px" height="150px">
+</div>
+<ul>
+<li><a href="ICT PBL Website.html"><b>Home</b></a></li>       
+<li><a href="History.html"><b>History</b></a></li>
+<li><a href="Holidays.html"><b>Holidays</b></a></li>
+<li><a href="PD.html"><b>Popular Destinations</b></a></li>
+<li><a href="About us.html"><b>About us</b></a></li>
+</ul>
+<hr>
+<br>
+<div class="div">
+	<h1 class="h1">Cultures and Traditions</h1>
+	<p class="pqRS"><b>In Myanmar</b></p>
+	<p class="pqRS">In this page, it'll be telling you about the cultures and taditions from Myanmar. It'll tell you the general culture about myanmar first. Then be telling you about more details about Myanmar cultures and arts. And then be telling you traditions in Myanmar like traditional dresses.</p>
+</div>
+<div class="intro">
+<h2 class="title SMM" align="center"><b>General culture about myanmar</b></h2>
+<p class="center_text p"><b>The culture of Myanmar (also known as Burma) has been heavily influenced by Buddhism. Burmese culture has also been influenced by its neighbours. In more recent times, British colonial rule and easternisation have influenced aspects of Burmese culture, including language and education.</b></p>
+<p class="center_text_copy p1"><b>Now Let's explore more details of Myanmar cultures and traditions about Myanmar!</b></p>
+</div>
+<br>
+<div class="div">
+    <h1>Historical roots & heritage of Burmese culture</h1>
+    <img src="STFUYOUNIGG.jpg" class="img">
+    <p class="we">People have lived in modern-day Myanmar for thousands of years. The first major civilisation was the Pyu, who arrived and settled from southern China in the second century BC. Myanmar was on a major trade route between China and southern India and people crossed from one place to the next on a regular basis. <b>The Pyu are believed to have brought Theravada Buddhism,</b> the major religion in Myanmar today, to the country.</p>
+    <p class="we">The modern day Burmese, part of the Bamar ethnic group, migrated to the Upper Irrawaddy Valley in the 9th century. They then went on to establish the Kingdom of Pagan in 1044 who ruled over modern-day Bagan until the Mongol invasion in 1287. <b>Burmese culture, identity, and languages flourished during this reign and evolved into the typical Burmese culture today.</b></p>
+    <p class="we">After the fall of Pagan, a series of city-states sprouted up for a few centuries and were constantly feuding and warring with each other. The Taungoo Dynasty in the 16th century <b>unified the states under one nation</b>. The leadership was replaced by the Konbaung Dynasty who were the last Burmese Kingdom in Mandalay before British colonization.</p>
+    <p class="we"><b>The British ruled from 1824 until 1948 and contributed to the development of Rangoon(Yangon),</b> an administrative system, and infrastructure. One of the legacies of colonialism is the old name of the country, Burma, which originates from the country’s main ethnic group: the Bamar people.</p>
+    <p class="we">In 1948, Burma gained their sovereignty and began to wrestle with internal conflicts and politics. The country entered a civil war and found themselves under a strict military regime from 1962 until 1988. Pro-democracy movements began and culminated in the election of the first non-military leader in 2016. Despite Myanmar now being a democratic country, they still face a number of internal problems and civil unrest.</p>
+    <h1>Culture –arts & architecture in Myanmar</h1>
+    <img src="217.jpg" class="img">
+    <p class="we">The styles of architecture are a major part of Myanmar traditional culture. You can see this in the design of pagodas and temples. Most styles that you see today have their roots in the adoption of Theravada Buddhism as the major religion in the 11th century. In fact, the Kingdom of Pagan commissioned the construction of thousands of religious buildings and temples of varying sizes in the relatively small area of modern Bagan. You can also see the exquisite carvings in the wooden monasteries, which is very typical of Burma. Traditional architecture has strong religious undertones.</p>
+    <p class="we">Another characteristic is the use of gold plating. Even in the most remote places where a stupa proudly ascends into the sky, you’ll see its exterior surface covered in gold plating. The Hti, or the upside down umbrella on the top of a stupa, is another traditional architectural characteristic of Myanmar. This is said to be one of the most important parts of the pagoda itself and is usually decorated with diamonds and precious stones. A 75-carat diamond sits happily on the top of the Hti on the Shwedagon Pagoda in Yangon.</p>
+    <p class="we">The British colonial buildings in Yangon also deserve to be mentioned, too. Under the British rule, a number of buildings were built with styles of architecture typical of their empire. The decades of restrictive military rule practically halted development of the former capital. Many buildings remain intact making it the largest collection of colonial buildings in Southeast Asia.</p>
+    <p class="we">The arts in Myanmar are also strongly aligned with their conservative Buddhist way of life. Paintings and sculptures showing the life and teachings of Gautama are common, especially in the ancient temples of Bagan. This was once painted or carved directly into the stone. When paper was introduced to the country, the art and paintings related to religious beliefs became more elaborate and expressive.</p>
+    <h1>Family in Myanmar. The traditional roles of men and women</h1>
+    <img src="282.jpg" class="img">
+    <p class="we">The roles of men and women tend to be less defined and equal in Burma when it comes to family life. Both work in the fields with men doing the heavier tasks and women doing things such as weaving. In fact, inside the house, men also cook and take care of children as well as the women. Compare this liberal and equal view of gender roles to places such as India, where society is male dominated. Even compared to more open countries in South East Asia, women tend to have more rights in Myanmar.</p>
+    <p class="we">Traditionally in Myanmar culture, women demand a high level of respect. However, following several decades of male-dominated rule under the military regime, this status has been undermined somewhat. Now the country is free and democratic, women are regaining their former influence and taking important roles in government. Just look at the success of the Nobel Peace Prize winner Aung San Suu Kyi.</p>
+    <p class="we">Family life is a major part of the culture and heritage of Myanmar. People tend to live near each other in the village and are very close and supportive. Children who go off to work in larger cities tend to return home on a regular basis, a trait similar to nearby countries such as Thailand and Vietnam.</p>
+    <h1>Religion and traditional beliefs in Myanmar</h1>
+    <img src="No_MORE_NUMBERS.jpg" class="img">
+    <p class="we">Theravada Buddhism, a more conservative branch of the religion, is practised by more than 90% of the population. This became the official state religion under the Kingdom of Pagan in 1044. Theravada Buddhism and the Burmese language developed and grew in popularity and influence during this era.</p>
+    <p class="we">You’ll notice that masses of locals regularly visit the temple or pagoda and make offerings to the various shrines and images of Buddha. This is a major part of the culture and religion in Myanmar. The conservative Buddhist way of life that’s engrained into the Burmese identity dictates the life and modern day culture of Myanmar.</p>
+    <p class="we">You can find thousands of golden pagodas throughout Myanmar with the most famous being the Shwedagon Pagoda in Yangon. Religious areas are kept very clean and you need to remove your shoes to enter. Strict dress codes apply and all tourists need to respect it.</p>
+    <p class="we">Apart from Buddhism, the second largest religious group are Christians, of which Protestantism is dominant. Portuguese missionaries brought Catholicism in the 18th century and it later transitioned more towards Protestantism under the British. Islam is also practised by a large percentage of the population in Rakhine State, which is currently in a state of conflict.</p>
+    <h1>Traditional dress in Myanmar</h1>
+    <img src="jpoukj.jpg" class="img">
+    <p class="we">The <i>longyi</i> is the most common type of traditional dress that’s worn on a regular basis. This is a large cloth that resembles a sarong that’s worn by both men and women. Males tie the front in a knot that hangs out whereas the ladies tuck it into the side. The only things that differ between the genders are the patterns and how it’s worn. A typical masculine longyi has a simple checked pattern on a dark coloured cloth whereas feminine ones are more colourful.</p>
+    <p class="we">You’ll see pretty much everyone in Myanmar wearing this on a daily basis, which is often accompanied by sandals or flip-flops. Even people heading to the office or a more formal and professional environment opt for a longyi with a shirt. In Myanmar, a longyi is a suitable item of clothing for pretty much every occasion.</p>
+    <p class="we">Traditional clothing for formal occasions such as national events and wedding are slightly different. Men wear a longchy that’s similar to a longyi with a formal shirt. Women, on the other hand, have a thummy. This is quite similar to the traditional clothes worn in Thailand.</p>
+    <h1>Traditional food in Myanmar</h1>
+    <img src="ITT.jpg" class="img">
+    <p class="we">Food varies considerably depending on what part of the country you’re visiting and which ethnic groups are dominant. There are 135 different ethnic groups in Myanmar who have their own styles of cooking and food preparation. And the country shares a border with three major cuisines in the region including Indian, Thai, and Chinese. For this reason, there tends to be a wide variety of meals available for visitors and a special eclectic combination.</p>
+    <p class="we">More specifically and in align with Asian culture, rice is the main staple. This is often served as plain, white rice along with a fish or meat main and a side of vegetables. Fish plays a huge role in the local dishes and it’s quite common for meals to be served with a fish sauce. Other popular dishes include noodles are either fried or part of a soup. Locals also eat curry on a regular basis.</p>
+    <p class="we">One of the dishes that tourists tend to sample is the tealeaf salad. This consists of shredded tea leaves that are mixed with cabbage and served with nuts, peas, and tomatoes. People will eat this as a snack or as a side with rice. You should be able to find this on sale in pretty much all parts of the country as it’s a favourite of many locals.</p>
+    <h1>Traditional celebrations and festivals in Myanmar</h1>
+    <img src="Nani.jpg" class="img">
+    <p class="we">One of the largest festivals that present Burmese customs at their very best is Thingyan. This is the New Year that’s celebrated in April and is characterised by the entire country taking part in a huge water fight. Anyone who’s travelled to Thailand and experienced Songkran will know what this event is all about.</p>
+    <p class="we">The Burmese New Year follows the lunar calendar and the dates are slightly different each year. Celebrations usually begin after a day of observing strict Buddhist practices and making offerings during daylight hours on the first day. This is then followed by four days of partying, drinking, and spraying water at each other.</p>
+    <p class="we"><b>Phaung Daw U</b> is another large festival that’s held at Inle Lake. Four large golden images of Buddha are paraded around the lake on boats with people coming from all around the country to attend and give their respects. This ties in strongly with the conservative Buddhism Myanmar beliefs that are dominant around the country.</p>
+    <p class="we">The Festival of Light (known locally as <b>Thadingyut</b>) begins soon after Phaung Daw U. Locals light candles, lamps, and lanterns and use them as decorations in religious buildings to celebrate the return of Buddha back to earth. Both are great festivals to attend to get more of an idea into the local way of life and culture.</p>
+</div>
+<hr>
+<div>
+<p class="Final"><b>The history and culture of Myanmar are based heavily on their conservative Buddhist beliefs and the early Kingdom of Pagan. Combine this with the number of ethnic groups and traditions and it makes Myanmar a unique travel destination in South East Asia. And remember, the more you learn about a place, the more it enhances your travel experience.</b></p>
+</div>
+<hr>
+   <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="lqoq">
+            <div class="lqoq1">
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Address</b></h3>
+                        <p>5726 Thiri Mingalar Ave, Bet. 78th & 35th Str. Mandalay 05031</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Phone</b></h3>
+                        <p>Tel: 09 794 910 763</p>
+                    </div>
+                </div>
+
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="tewq">
+                        <h3><b>Email</b></h3>
+                        <p>shineminmaung@edusnschool.co.uk</p>
+                    </div>
+                </div>
+                <div class="lqoq2">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <h3><b>Reference from: https://12go.asia/</b></h3>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
